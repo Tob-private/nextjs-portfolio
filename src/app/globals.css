@@ -42,6 +42,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
+
 html,
 body {
   height: 100%;
@@ -120,7 +121,42 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.project-grid {
+  display: grid;
+  grid-template: repeat(8, 200px) / repeat(4, 200px);
+  grid-template-areas:
+    ". . one . . . . ."
+    ". . . . two . . ."
+    ". . . three . . . four"
+    "five . . . . six . .";
+}
+
+.project-grid>*:nth-child(1) {
+  grid-area: one;
+}
+
+.project-grid>*:nth-child(2) {
+  grid-area: two;
+}
+
+.project-grid>*:nth-child(3) {
+  grid-area: three;
+}
+
+.project-grid>*:nth-child(4) {
+  grid-area: four;
+}
+
+.project-grid>*:nth-child(5) {
+  grid-area: five;
+}
+
+.project-grid>*:nth-child(6) {
+  grid-area: six;
 }

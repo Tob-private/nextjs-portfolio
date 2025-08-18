@@ -16,7 +16,7 @@ export default function GreenHero() {
                     A group project with UX, Devs, and DevOps students
                 </CardDescription>
             </CardHeader>
-            <CardContent>
+            {/* <CardContent>
                 <p>
                     At the end of my first year on Chas Academy, a merged group of designers, developers (me!) and DevOps worked together to create a webapp that encouraged people to &#34;live a green life&#34;, where they got points for picking up trash from the streets, recycling, and shopping second hand.
                 </p>
@@ -33,7 +33,7 @@ export default function GreenHero() {
                         {tech}
                     </span>
                 ))}
-            </CardFooter>
+            </CardFooter> */}
         </Card>
     );
 }

@@ -12,7 +12,7 @@ import {
 
 export default function AngularPortfolio() {
     return (
-        <Card>
+        <Card className="rounded-full text-center">
             <CardHeader>
                 <CardTitle className="text-2xl">Angular Portfolio</CardTitle>
                 <CardDescription>

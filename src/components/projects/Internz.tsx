@@ -12,19 +12,19 @@ import {
 
 export default function Internz() {
     return (
-        <Card>
+        <Card className="rounded">
             <CardHeader>
                 <CardTitle className="text-2xl">Internz</CardTitle>
                 <CardDescription>
                     A group project when we first learned React
                 </CardDescription>
-                <CardAction>
+                {/* <CardAction>
                     <Button>
                         <Link href={"https://github.com/Tobias-ChasStudent/Internz-Inlamning"}>See more</Link>
                     </Button>
-                </CardAction>
+                </CardAction> */}
             </CardHeader>
-            <CardContent>
+            {/* <CardContent>
                 <p>
                     In the midst of our React course of my education at Chas Academy, me and a group of classmates were tasked with creating an app that would help students find internships, also known as  &#34;LIA &#34; (Learning While Working).
                 </p>
@@ -42,7 +42,7 @@ export default function Internz() {
                         {tech}
                     </span>
                 ))}
-            </CardFooter>
+            </CardFooter> */}
         </Card>
     );
 }
