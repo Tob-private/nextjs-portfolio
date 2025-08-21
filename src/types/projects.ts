@@ -3,6 +3,6 @@ export interface ProjectInterface {
   title: string;
   desc: string;
   link?: string;
-  content: string;
+  content: string[];
   tech: string[];
 }

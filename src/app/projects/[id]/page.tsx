@@ -10,23 +10,21 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
-import { ProjectInterface } from "@/app/types/projects";
-import { notFound, usePathname } from "next/navigation";
-import { projects } from "@/app/data/projects";
+import { ProjectInterface } from "@/types/projects";
+import { usePathname } from "next/navigation";
+import { fetchProjectFromPath } from "@/utils/projectHelpers";
 
 export default function ProjectPage() {
   const pathStringID: string | undefined = usePathname().split("/").pop();
 
-  const pathID: number = Number(pathStringID);
+  if (!pathStringID) {
+    throw new Error("Path ID is undefined");
+  }
 
-  const project: ProjectInterface = projects.find(
-    (project: ProjectInterface) => project.id === pathID,
-  );
-
-  if (!project) notFound();
+  const project: ProjectInterface = fetchProjectFromPath(pathStringID);
 
   return (
-    <Card>
+    <Card className="width-full max-w-2xl mx-auto my-8 p-6 rounded-lg shadow-lg">
       <CardHeader>
         <CardTitle className="text-2xl">{project.title}</CardTitle>
         <CardDescription>{project.desc}</CardDescription>
@@ -39,7 +37,11 @@ export default function ProjectPage() {
         )}
       </CardHeader>
       <CardContent>
-        <p>{project.content}</p>
+        {project.content.map((paragraph, index) => (
+          <p key={index} className="mb-4">
+            {paragraph}
+          </p>
+        ))}
       </CardContent>
       <CardFooter className="flex-row flex-wrap">
         {project.tech.map((technology) => (

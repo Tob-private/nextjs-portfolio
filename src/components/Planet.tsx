@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { type PlanetInterface } from "../app/types/planet";
+import { type PlanetInterface } from "../types/planet";
 
 export default function Planet({ planet }: { planet: PlanetInterface }) {
   return (

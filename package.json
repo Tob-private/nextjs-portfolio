@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "format": "next lint && npx prettier . --write"
+    "format": "npx prettier . --write && next lint"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",

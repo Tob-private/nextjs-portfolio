@@ -4,7 +4,7 @@ export const planets: PlanetInterface[] = [
   {
     id: 1,
     name: "about",
-    route: "/pages/about/",
+    route: "/about/",
     styling:
       "w-40 h-40 rounded-full bg-red-700 grid place-items-center text-center",
     desc: "My story",
@@ -12,7 +12,7 @@ export const planets: PlanetInterface[] = [
   {
     id: 2,
     name: "projects",
-    route: "/pages/projects/",
+    route: "/projects/",
     styling:
       "w-60 h-60 rounded-full bg-green-700 grid place-items-center text-center",
     desc: "My projects, ranging from homelabbing to websites",
@@ -20,7 +20,7 @@ export const planets: PlanetInterface[] = [
   {
     id: 3,
     name: "professional experience",
-    route: "/pages/experience/",
+    route: "/experience/",
     styling:
       "w-80 h-80 rounded-full bg-orange-700 grid place-items-center text-center",
     desc: "The work experience I have accumulated",
@@ -28,7 +28,7 @@ export const planets: PlanetInterface[] = [
   {
     id: 4,
     name: "contact",
-    route: "/pages/contact/",
+    route: "/contact/",
     styling:
       "w-50 h-50 rounded-full bg-blue-700 grid place-items-center text-center",
     desc: "My links and contact info",

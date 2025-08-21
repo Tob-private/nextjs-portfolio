@@ -1,5 +1,5 @@
-import { projects } from "@/app/data/projects";
-import { ProjectInterface } from "@/app/types/projects";
+import { projects } from "@/data/projects";
+import { ProjectInterface } from "@/types/projects";
 import Moon from "@/components/Moon";
 
 export default function Projects() {
