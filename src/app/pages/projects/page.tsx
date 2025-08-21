@@ -10,7 +10,6 @@ export default function Projects() {
                     <Moon key={project.id} title={project.title} desc={project.desc} link={project.id} />
                 ))
             }
-
         </div>
     );
 }

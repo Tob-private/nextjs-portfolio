@@ -17,16 +17,10 @@ import { projects } from "@/app/data/projects";
 export default function ProjectPage() {
 
     const pathStringID: string | undefined = usePathname().split('/').pop();
-    if (!pathStringID) notFound()
 
     const pathID: number = Number(pathStringID)
     
-    console.log(pathID);
-    const project: ProjectInterface = projects.find((project: ProjectInterface) => {
-        console.log(project.id);
-        return project.id === pathID
-        
-    })
+    const project: ProjectInterface = projects.find((project: ProjectInterface) => project.id === pathID)
 
     if (!project) notFound()
 

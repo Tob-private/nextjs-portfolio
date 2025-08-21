@@ -2,8 +2,6 @@ import Link from "next/link";
 
 export default function Moon({title, desc, link}: {title: string, desc: string, link: number}) {
 
-    // data<T> could be of different types
-
     return (
         <Link href={`/pages/projects/${link}`} className="rounded-full bg-gray-500 text-center p-1 flex flex-col place-content-center">
             <div>
