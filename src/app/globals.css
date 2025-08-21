@@ -129,7 +129,7 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template: repeat(8, 200px) / repeat(4, 200px);
+  grid-template: repeat(4, 200px) / repeat(8, 200px);
   grid-template-areas:
     ". . one . . . . ."
     ". . . . two . . ."
