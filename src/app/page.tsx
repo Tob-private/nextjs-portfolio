@@ -11,12 +11,14 @@ import { planets } from "@/data/planets";
 
 export default function Home() {
   return (
-    <article className="flex gap-4 px-4 justify-around place-items-center h-full w-[90%] m-auto">
-      {/* line behind planets */}
-      <div className="absolute top-1/2 left-0 right-0 h-1 bg-gray-400 -z-10"></div>
-      {planets.map((planet: PlanetInterface) => (
-        <Planet key={planet.id} planet={planet} />
-      ))}
-    </article>
+    <section className="relative size-full">
+      <article className="flex gap-4 px-4 justify-around place-items-center h-full w-[90%] m-auto">
+        {/* line behind planets */}
+        <div className="absolute top-1/2 left-0 right-0 h-1 bg-gray-400 -z-10"></div>
+        {planets.map((planet: PlanetInterface) => (
+          <Planet key={planet.id} planet={planet} />
+        ))}
+      </article>
+    </section>
   );
 }
