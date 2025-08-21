@@ -1,7 +1,3 @@
 export default function Experience() {
-    return (
-        <div>
-            Professional Experience
-        </div>
-    );
+  return <div>Professional Experience</div>;
 }

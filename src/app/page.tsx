@@ -1,7 +1,6 @@
 import Planet from "@/components/Planet";
 import { type PlanetInterface } from "@/app/types/planet";
-import { planets } from '@/app/data/planets'
-
+import { planets } from "@/app/data/planets";
 
 // Idea is to have a solarsystem of planets with moons.
 // Each planet will be a page representing things like contact info, projects, experience, about me, etc
