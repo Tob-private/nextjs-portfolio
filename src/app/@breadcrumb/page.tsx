@@ -3,7 +3,6 @@ import {
   BreadcrumbItem,
   BreadcrumbList,
   BreadcrumbLink,
-  BreadcrumbEllipsis,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 
