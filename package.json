@@ -5,7 +5,7 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "npx prettier --write",
-      "next lint --fix"
+      "next lint --fix --file"
     ],
     "!**/node_modules/*": "echo 'Skipping node_modules'",
     "!**/.next/*": "echo 'Skipping Next.js build output'"
@@ -37,7 +37,6 @@
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.5",
     "prettier": "3.6.2",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.7",
