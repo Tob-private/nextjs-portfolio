@@ -2,6 +2,7 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
+  BreadcrumbLink,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 
