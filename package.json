@@ -5,7 +5,7 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "npx prettier --write",
-      "next lint --fix --file --max-warnings=0"
+      "next lint --fix --max-warnings=0 --file"
     ],
     "!**/node_modules/*": "echo 'Skipping node_modules'",
     "!**/.next/*": "echo 'Skipping Next.js build output'"
