@@ -19,7 +19,10 @@ eslintConfig.forEach((config) => {
     for (const [rule, setting] of Object.entries(config.rules)) {
       if (setting === "warn" || setting === 1) {
         config.rules[rule] = "error";
-      } else if (Array.isArray(setting) && (setting[0] === "warn" || setting[0] === 1)) {
+      } else if (
+        Array.isArray(setting) &&
+        (setting[0] === "warn" || setting[0] === 1)
+      ) {
         config.rules[rule][0] = "error";
       }
     }
