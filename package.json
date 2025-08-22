@@ -2,6 +2,14 @@
   "name": "nextjs-portfolio",
   "version": "0.1.0",
   "private": true,
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "next lint --fix"
+    ],
+    "!**/node_modules/*": "echo 'Skipping node_modules'",
+    "!**/.next/*": "echo 'Skipping Next.js build output'"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
