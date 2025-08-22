@@ -1,1 +1,2 @@
-npm run format
+npx prettier . --write
+next lint
